@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+
 import { SignedIn, SignedOut, SignIn, SignInButton, SignOutButton, UserButton } from '@clerk/clerk-react'
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
       <h1>Welcome to the app </h1>
       <SignedOut>
       <SignInButton mode='model'/>
+      <button>Login</button>
       </SignedOut>
 
       <SignedIn>
